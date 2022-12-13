@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="TeleFon.css" />
+
+    <!-- SYMBOLE -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+  </head>
+    <section class="logo">
+      <a href="#"><span>Tele</span>Fon</a>
+    </section>
+    <section class="nav">
+      <span class="material-symbols-outlined home"> home </span>
+      <span class="material-symbols-outlined account_circle">
+        account_circle
+      </span>
+      <span class="material-symbols-outlined call"> call </span>
+      <span class="material-symbols-outlined search"> search </span>
+      <span class="material-symbols-outlined menu"> menu </span>
+    </section>
+  <div class="search-bar">
+    <input
+    type="text"
+    class="search-bar-input"
+    placeholder="Szukaj..."
+    autocomplete="off"
+  />
+  </div>
+  <section class="more">
+    <ul>
+      <li>Na kartę</li>
+      <li>Abonament</li>
+      <li>Internet</li>
+      <li>Urządzenia</li>
+    </ul>
+  </section>
+
+  <div class="offer-on-card">
+    <ul>
+      <li>
+        <h1>Oferta S</h1>
+        <h2>INTERNET 5G:<span> 15GB</span></h2>
+        <h2>ROZMOWY:<span> Bez limitu</span></h2>
+        <h2>SMS/MMS:<span> Bez limitu</span></h2>
+
+        <div class="more-offer-s">
+          <h3>Wyślij SMS o treści "Oferta S" pod numer 510.</h3>
+          <h3>Oferta odnawia się automatycznie co 30 dni za 15zł.</h3>
+          <h3>
+            W celu rezygnacji z oferty wyślij SMS o treści "Oferta STOP" pod
+            numer 510.
+          </h3>
+        </div>
+        <span class="material-symbols-outlined expand_less-s">
+          expand_less
+          </span>
+      </li>
+      <li>
+        <h1>Oferta M</h1>
+        <h2>INTERNET 5G:<span> 30GB</span></h2>
+        <h2>ROZMOWY:<span> Bez limitu</span></h2>
+        <h2>SMS/MMS:<span> Bez limitu</span></h2>
+        <div class="more-offer-m">
+          <h3>Wyślij SMS o treści "Oferta M" pod numer 510.</h3>
+          <h3>Oferta odnawia się automatycznie co 30 dni za 20zł.</h3>
+          <h3>
+            W celu rezygnacji z oferty wyślij SMS o treści "Oferta STOP" pod
+            numer 510.
+          </h3>
+        </div>
+        <span class="material-symbols-outlined expand_less-m">
+          expand_less
+          </span>
+      </li>
+      <li>
+        <h1>Oferta L</h1>
+        <h2>INTERNET 5G:<span> 50GB</span></h2>
+        <h2>ROZMOWY:<span> Bez limitu</span></h2>
+        <h2>SMS/MMS:<span> Bez limitu</span></h2>
+        <div class="more-offer-l">
+          <h3>Wyślij SMS o treści "Oferta L" pod numer 510.</h3>
+          <h3>Oferta odnawia się automatycznie co 30 dni za 30zł.</h3>
+          <h3>
+            W celu rezygnacji z oferty wyślij SMS o treści "Oferta STOP" pod
+            numer 510.
+          </h3>
+        </div>
+        <span class="material-symbols-outlined expand_less-l">
+          expand_less
+          </span>
+      </li>
+      <li>
+        <h1>Oferta XL</h1>
+        <h2>INTERNET 5G:<span> 100GB</span></h2>
+        <h2>ROZMOWY:<span> Bez limitu</span></h2>
+        <h2>SMS/MMS:<span> Bez limitu</span></h2>
+        <div class="more-offer-xl">
+          <h3>Wyślij SMS o treści "Oferta XL" pod numer 510.</h3>
+          <h3>Oferta odnawia się automatycznie co 30 dni za 40zł.</h3>
+          <h3>
+            W celu rezygnacji z oferty wyślij SMS o treści "Oferta STOP" pod
+            numer 510.
+          </h3>
+        </div>
+          <span class="material-symbols-outlined expand_less-xl">
+            expand_less
+            </span>
+      </li>
+    </ul>
+  </div>
+
+
+  <script>
+      const searchBar = document.querySelector(".search-bar");
+      const showSearchBar = document.querySelector(".search");
+
+      showSearchBar.addEventListener("click", function () {
+        searchBar.classList.toggle("active");
+      });
+
+      const moreBar = document.querySelector(".more");
+      const moreShowBar = document.querySelector(".menu");
+
+      moreShowBar.addEventListener("click", function () {
+        moreBar.classList.toggle("active");
+      });
+
+      const moreOfferS = document.querySelector(".more-offer-s, .expand_less-s");
+      const moreShowOfferS = document.querySelector(".expand_less-s");
+
+      moreShowOfferS.addEventListener("click", function () {
+        moreOfferS.classList.toggle("active");
+      });
+
+      const moreOfferM = document.querySelector(".more-offer-m, .expand_less-m");
+      const moreShowOfferM = document.querySelector(".expand_less-m");
+
+      moreShowOfferM.addEventListener("click", function () {
+        moreOfferM.classList.toggle("active");
+      });
+
+      const moreOfferL = document.querySelector(".more-offer-l, .expand_less-l");
+      const moreShowOfferL = document.querySelector(".expand_less-l");
+
+      moreShowOfferL.addEventListener("click", function () {
+        moreOfferL.classList.toggle("active");
+      });
+
+      const moreOfferXL = document.querySelector(".more-offer-xl, .expand_less-xl");
+      const moreShowOfferXL = document.querySelector(".expand_less-xl");
+
+      moreShowOfferXL.addEventListener("click", function () {
+        moreOfferXL.classList.toggle("active");
+      });
+
+      const moreButtonS = document.querySelector(".expand_less-s");
+      const moreShowButtonS = document.querySelector(".expand_less-s");
+
+      moreShowButtonS.addEventListener("click", function () {
+        moreButtonS.classList.toggle("active");
+      });
+
+      const moreButtonM = document.querySelector(".expand_less-m");
+      const moreShowButtonM = document.querySelector(".expand_less-m");
+
+      moreShowButtonM.addEventListener("click", function () {
+        moreButtonM.classList.toggle("active");
+      });
+
+      const moreButtonL = document.querySelector(".expand_less-l");
+      const moreShowButtonL = document.querySelector(".expand_less-l");
+
+      moreShowButtonL.addEventListener("click", function () {
+        moreButtonL.classList.toggle("active");
+      });
+
+      const moreButtonXL = document.querySelector(".expand_less-xl");
+      const moreShowButtonXL = document.querySelector(".expand_less-xl");
+
+      moreShowButtonXL.addEventListener("click", function () {
+        moreButtonXL.classList.toggle("active");
+      });
+
+  </script>
+  </body>
+</html>

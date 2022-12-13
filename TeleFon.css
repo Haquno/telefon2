@@ -1,0 +1,285 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Martian+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+/* rgb(157, 255, 206) 
+rgb(157, 255, 206)*/
+
+body {
+  margin: 0;
+  font-family: "Righteous", cursive;
+  background: rgb(72, 202, 255);
+  background: linear-gradient(
+    45deg,
+    rgba(72, 202, 255, 1) 25%,
+    rgba(255, 119, 168, 1) 75%
+  );
+}
+
+/* LOGO */
+.logo {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 1em;
+  font-style: none;
+}
+
+.logo a {
+  text-decoration: none;
+  color: black;
+  font-size: 2em;
+}
+
+.logo span {
+  color: rgb(255, 255, 255);
+}
+
+/* PASEK NAWIGACYJNY */
+.nav {
+  background-color: rgb(255, 255, 255);
+  margin: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5em;
+}
+
+.nav .material-symbols-outlined {
+  padding: 0.4em;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10em;
+  margin: 0.3em;
+}
+
+.nav .account_circle,
+.call,
+.search,
+.menu {
+  cursor: pointer;
+  transition: 0.1s ease-in-out;
+  font-size: 1.3em;
+  color: black;
+}
+.nav .home {
+  font-size: 1.8em;
+  background-color: rgb(59, 160, 255);
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  transition: 0.1s ease-in-out;
+}
+
+.nav .account_circle:hover,
+.call:hover,
+.search:hover,
+.menu:hover {
+  background-color: rgb(79, 176, 255);
+  font-size: 1.6em;
+  transition: 0.1s ease-in-out;
+  color: rgb(255, 255, 255);
+}
+
+.nav .home:hover {
+  background-color: rgb(255, 103, 103);
+  font-size: 2em;
+  transition: 0.1s ease-in-out;
+  color: rgb(255, 255, 255);
+}
+
+/* SZUKAJ... */
+.search-bar {
+  display: none;
+}
+
+.search-bar-input {
+  background-color: rgba(255, 255, 255);
+  border-style: none;
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-bottom: 0.5em;
+  padding: 1.2em;
+  border-radius: 10em;
+  width: 60%;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  color: black;
+  font-size: 1em;
+}
+
+.search-bar.active {
+  display: block;
+  display: flex;
+  justify-content: center;
+}
+
+.search-bar.deactive {
+  display: none;
+}
+
+/* MENU */
+.more {
+  display: none;
+}
+
+.more.active {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+  margin: 0.5em 5em 0.5em 5em;
+  padding: 0;
+  border-radius: 1em;
+  font-family: "Poppins", sans-serif;
+}
+
+.more ul {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+}
+
+.more li {
+  padding: 0.7em;
+  font-size: 1em;
+  transition: 0.2s ease-in-out;
+}
+
+.more li:hover {
+  background-color: rgb(59, 160, 255);
+  font-size: 1.3em;
+  transition: 0.2s ease-in-out;
+  color: rgb(255, 255, 255);
+  border-radius: 10em;
+  cursor: pointer;
+  padding: 0.3em;
+}
+
+/* OFERTA NA KARTE */
+.offer-on-card {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.offer-on-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.offer-on-card li {
+  background-color: rgb(255, 255, 255, 0.8);
+  margin: 3em;
+  margin-bottom: 4em;
+  text-align: center;
+  border-radius: 1em;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  border-width: 2px;
+  transition: 0.2s ease-in-out;
+  font-size: 13px;
+}
+
+.offer-on-card li:hover {
+  background-color: rgb(255, 255, 255);
+  transition: 0.2s ease-in-out;
+}
+
+.offer-on-card h1 {
+}
+
+.offer-on-card .expand_less-s {
+  margin: auto;
+  padding: 0.5em;
+  width: 0.95em;
+  transform: rotate(180deg);
+  font-weight: bold;
+  font-size: 2em;
+  border-width: 2px;
+  transition: 0.3s ease-in-out;
+  margin-bottom: 0.5em;
+}
+
+.offer-on-card .expand_less-m {
+  margin: auto;
+  padding: 0.5em;
+  width: 0.95em;
+  transform: rotate(180deg);
+  font-weight: bold;
+  font-size: 2em;
+  border-width: 2px;
+  transition: 0.3s ease-in-out;
+  margin-bottom: 0.5em;
+}
+
+.offer-on-card .expand_less-l {
+  margin: auto;
+  padding: 0.5em;
+  width: 0.95em;
+  transform: rotate(180deg);
+  font-weight: bold;
+  font-size: 2em;
+  border-width: 2px;
+  transition: 0.3s ease-in-out;
+  margin-bottom: 0.5em;
+}
+
+.offer-on-card .expand_less-xl {
+  margin: auto;
+  padding: 0.5em;
+  width: 0.95em;
+  transform: rotate(180deg);
+  font-weight: bold;
+  font-size: 2em;
+  border-width: 2px;
+  transition: 0.3s ease-in-out;
+  margin-bottom: 0.5em;
+}
+
+.offer-on-card .expand_less-s:hover,
+.expand_less-m:hover,
+.expand_less-l:hover,
+.expand_less-xl:hover {
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  background-color: rgb(59, 160, 255);
+  border-radius: 10em;
+}
+
+.offer-on-card .expand_less-s.active {
+  transform: rotate(0deg);
+}
+
+.offer-on-card .expand_less-m.active {
+  transform: rotate(0deg);
+  transition: 0.3s ease-in-out;
+}
+
+.offer-on-card .expand_less-l.active {
+  transform: rotate(0deg);
+  transition: 0.3s ease-in-out;
+}
+
+.offer-on-card .expand_less-xl.active {
+  transform: rotate(0deg);
+  transition: 0.3s ease-in-out;
+}
+
+.more-offer-s,
+.more-offer-m,
+.more-offer-l,
+.more-offer-xl {
+  display: none;
+  transition: transform 0.5s;
+  transform: translateY(-1em);
+  visibility: hidden;
+}
+
+.more-offer-s.active,
+.more-offer-m.active,
+.more-offer-l.active,
+.more-offer-xl.active {
+  display: block;
+  transition: transform 0.5s;
+  transform: translateY(-1em);
+  visibility: visible;
+}
