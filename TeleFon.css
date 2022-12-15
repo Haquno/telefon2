@@ -8,12 +8,18 @@ rgb(157, 255, 206)*/
 body {
   margin: 0;
   font-family: "Righteous", cursive;
-  background: rgb(72, 202, 255);
+  background: rgb(202, 240, 255);
+  background: linear-gradient(
+    45deg,
+    rgba(202, 240, 255, 1) 25%,
+    rgba(52, 112, 135, 1) 75%
+  );
+  /* background: rgb(72, 202, 255);
   background: linear-gradient(
     45deg,
     rgba(72, 202, 255, 1) 25%,
     rgba(255, 119, 168, 1) 75%
-  );
+  ); */
 }
 
 /* LOGO */
@@ -37,7 +43,7 @@ body {
 
 /* PASEK NAWIGACYJNY */
 .nav {
-  background-color: rgb(255, 255, 255);
+  background-color: rgba(226, 226, 226, 0.6);
   margin: 1em;
   display: flex;
   align-items: center;
@@ -165,9 +171,9 @@ body {
 }
 
 .offer-on-card li {
-  background-color: rgb(255, 255, 255, 0.8);
-  margin: 3em;
-  margin-bottom: 4em;
+  background-color: rgba(226, 226, 226, 0.6);
+  margin: 1.5em;
+  margin-bottom: 2em;
   text-align: center;
   border-radius: 1em;
   display: flex;
